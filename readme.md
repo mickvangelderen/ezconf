@@ -24,6 +24,7 @@ module.exprots = {
 	USERNAME: 'prodadmin',
 	PASSWORD: 'pav7ZuTr'
 }
+```
 
 > development-config.js
 ```javascript
