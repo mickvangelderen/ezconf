@@ -1,6 +1,10 @@
 # Easy Configuration
 
-Install ezconf by typing `node install --save ezconf`.
+Install ezconf by typing `npm install --save ezconf`.
+
+
+
+## Setup
 
 Create a config directory in the root of your project
 
@@ -40,6 +44,10 @@ module.exports = {
 
 
 
+## Usage
+
+Using ezconf is very simple, you just `require('ezconf')` as shown below.
+
 > index.js
 
 ```javascript
@@ -48,10 +56,16 @@ var config = require('ezconf');
 console.log(config.USERNAME);
 ```
 
+Just execute your application like so
 
+```bash
+$ node index.js
+devadmin
+```
 
-If you now execute `node index.js` it will print `devadmin`.
+Set the environment variable to *production*, *test* or *development* to select the right configuration
 
-If you set NODE_ENV to production by executing the following `NODE_ENV=production node index.js` it will print `prodadmin`.
-
-In other words, ezconf determines the right config file by looking at process.NODE_ENV. If NODE_ENV is not `production` or `test` it defaults to `development`.
+```bash
+$ NODE_ENV=production
+prodadmin
+```
