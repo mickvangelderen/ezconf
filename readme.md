@@ -19,6 +19,7 @@ project/
 If you want, add a line `/config/` to your gitignore to ignore the config folder.
 
 > production-config.js
+
 ```javascript
 module.exprots = {
 	USERNAME: 'prodadmin',
@@ -26,7 +27,10 @@ module.exprots = {
 }
 ```
 
+
+
 > development-config.js
+
 ```javascript
 module.exports = {
   USERNAME: 'devadmin',
@@ -34,12 +38,17 @@ module.exports = {
 };
 ```
 
+
+
 > index.js
+
 ```javascript
 var config = require('ezconf');
 
 console.log(config.USERNAME);
 ```
+
+
 
 If you now execute `node index.js` it will print `devadmin`.
 
