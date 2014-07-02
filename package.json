@@ -1,0 +1,25 @@
+{
+  "name": "ezconf",
+  "version": "0.0.0",
+  "description": "easy environment aware configuration file loading",
+  "main": "lib/ezconf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mickvangelderen/ezconf"
+  },
+  "keywords": [
+    "configuration",
+    "environment",
+    "easy",
+    "simple"
+  ],
+  "author": "Mick van Gelderen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mickvangelderen/ezconf/issues"
+  },
+  "homepage": "https://github.com/mickvangelderen/ezconf"
+}
