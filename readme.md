@@ -13,7 +13,7 @@ project/
   index.js
 ```
 
-If you want, add a line `/config/` to your gitignore to ignore the config folderr.
+If you want, add a line `/config/` to your gitignore to ignore the config folder.
 
 *development-config.js*
 ```javascript
@@ -30,4 +30,4 @@ var config = require('ezconf');
 console.log(config.USERNAME);
 ```
 
-ezconf determines the right config file by looking at process.NODE_ENV. If NODE_ENV is not 'production' or 'test' it defaults to 'development'.
+ezconf determines the right config file by looking at process.NODE_ENV. If NODE_ENV is not `test` or `production` it defaults to `development`.
